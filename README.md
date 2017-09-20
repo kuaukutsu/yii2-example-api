@@ -1,5 +1,7 @@
 # yii2-example-api
 
+Example of creating an application for the API on the basis of Yii2.
+
 ## installing
 
 ```

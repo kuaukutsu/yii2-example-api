@@ -1,0 +1,32 @@
+class_name: ApiTester
+modules:
+    enabled:
+      - REST:
+          depends: [PhpBrowser, Yii2]
+          url: https://rest.localhost
+          part: Json
+      - \rest\tests\Helper\Api
+    config:
+      - Yii2:
+        entryUrl: https://rest.localhost
+      - PhpBrowser:
+        browser: firefox
+
+env:
+    phantom:
+         modules:
+            config:
+                WebDriver:
+                    browser: 'phantomjs'
+
+    chrome:
+         modules:
+            config:
+                WebDriver:
+                    browser: 'chrome'
+
+    firefox:
+         modules:
+            config:
+                WebDriver:
+                    browser: 'firefox'

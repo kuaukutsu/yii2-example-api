@@ -1,0 +1,9 @@
+# ignore
+
+/.idea
+/www/*
+
+# exclude
+
+!/www/rest
+!/www/composer.json
